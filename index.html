@@ -5,7 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
 <script src="https://unpkg.com/aframe-touch-inspector@1.1.2/dist/aframe-inspector.min.js"></script>
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script> 
+  <script src="https://unpkg.com/aframe-gltf-part-component/dist/aframe-gltf-part-component.min.js"></script> 
 
+    
+    
 
 	
 	<style>
@@ -283,8 +289,12 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
   
 </div>
 <a-scene debug="true" stats="false" loading-screen="enabled:false" physics="gravity:-10;restitution:0.5;friction:0.2" >
-
-	<a-entity id="ground" gltf-model=" " static-body></a-entity>
+	<a-assets>
+		<a-asset-item id="assytemplatesrc" src="assytemplate.gltf" ></a-asset-item>
+    
+	</a-assets>
+	
+	<a-entity id="ground" gltf-model=" " static-body ></a-entity>
 
         <a-entity id="planeboxxx" position="0 0 0" scale="1 1 1">
             <a-entity id="planeboxx" position="0 0 0">
@@ -378,12 +388,15 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
         </a-entity>
 
 <a-entity id="floor" gltf-model="#" position="0 0 0" rotation="0 0 0" scale="1 1 1" static-body ></a-entity>
-  <!-a-entity id="box1" geometry="primitive:box" material="color:#4cc3d9" position="-1 1 -4" scale="5 5 5" dynamic-body click-impulse ></a-entity>
-  <a-entity id="box2" geometry="primitive:box" material="color:#ef2d5e" position="1 1 -4" scale="5 5 5" dynamic-body click-impulse ></a-entity>
-  <a-plane rotation="-90 0 0" width="20" height="20" color="#777"></a-plane-->
-  <a-sky color="#65a9e8"></a-sky
-
-							 
+ 
+  <a-sky color="#65a9e8"></a-sky>
+	  
+<a-entity gltf-part="src: #office; part: chair" material="color: black" position="0 0 -1"></a-entity>
+    <a-entity gltf-part="src: #assytemplate; part: part01" position="0 0 0"  ></a-entity>
+    <a-entity gltf-part="src: #office; part: wall1" material="color: white" position="-1 0 -3"></a-entity>
+    <a-entity gltf-part="src: #office; part: wall2" material="color: white" position="1 0 -3"></a-entity>
+  
+							
 </a-scene>
 
 
