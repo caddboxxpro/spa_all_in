@@ -66,11 +66,11 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 
 <div id="commandSets">
   <div id="commandSetCreate1" class="commandSet" style="--menu-color:#d32f2f">
-    <button id="create" onclick="cadCommand('create')">cmd one</button>
-    <button id="create" onclick="cadCommand('create')">cmd two</button>
-    <button id="create" onclick="cadCommand('create')">cmd three</button>
-    <button id="create" onclick="cadCommand('create')">cmd four</button>
-    <button id="create" onclick="cadCommand('create')">cmd five</button>
+    <button id="createcube" onclick="cadCommand('createCube')">CUBE</button>
+    <button id="createsphere" onclick="cadCommand('createSphere')">SPHERE</button>
+    <button id="createcylinder" onclick="cadCommand('createCylinder')">CYLINDER</button>
+    <button id="createcone" onclick="cadCommand('createCone')">CONE</button>
+    <button id="createtube" onclick="cadCommand('createTube')">TUBE</button>
     <button id="createHome" class="home" onclick="showHome('createHome')">HOME</button>
   </div>
   <div id="commandSetCreate2" class="commandSet" style="--menu-color:#d32f2f">
@@ -390,8 +390,8 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 	  
 <a-entity gltf-part="src: #office; part: chair" material="color: black" position="0 0 -1"></a-entity>
     <a-entity gltf-part="src: #assy3; part: drawer1" position="0 0 0"  ></a-entity>
-    <a-entity gltf-part="src: #assy3; part: drawer2" material="color: white" position="0 0 0"></a-entity>
-    <a-entity gltf-part="src: #assy3; part: draWer3" material="color: white" position="0 0 0"></a-entity>
+    <a-entity gltf-part="src: #assy3; part: drawer2" position="0 0 0"></a-entity>
+    <a-entity gltf-part="src: #assy3; part: drawer3" position="0 0 0"></a-entity>
   <!--ANIOMATIKONS-->
 		<a-entity animation="property: position"
 		  animation="property: position"
