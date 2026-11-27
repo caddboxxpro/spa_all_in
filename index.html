@@ -5,10 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
 <script src="https://unpkg.com/aframe-touch-inspector@1.1.2/dist/aframe-inspector.min.js"></script>
-<head>
-  <title>My A-Frame Scene</title>
-  <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script> 
-  <script src="https://unpkg.com/aframe-gltf-part-component/dist/aframe-gltf-part-component.min.js"></script> 
+<script src="https://unpkg.com/aframe-gltf-part-component/dist/aframe-gltf-part-component.min.js"></script> 
 
     
     
@@ -392,11 +389,20 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
   <a-sky color="#65a9e8"></a-sky>
 	  
 <a-entity gltf-part="src: #office; part: chair" material="color: black" position="0 0 -1"></a-entity>
-    <a-entity gltf-part="src: #assytemplate; part: part01" position="0 0 0"  ></a-entity>
-    <a-entity gltf-part="src: #office; part: wall1" material="color: white" position="-1 0 -3"></a-entity>
-    <a-entity gltf-part="src: #office; part: wall2" material="color: white" position="1 0 -3"></a-entity>
-  
-							
+    <a-entity gltf-part="src: #assy3; part: drawer1" position="0 0 0"  ></a-entity>
+    <a-entity gltf-part="src: #assy3; part: drawer2" material="color: white" position="0 0 0"></a-entity>
+    <a-entity gltf-part="src: #assy3; part: draWer3" material="color: white" position="0 0 0"></a-entity>
+  <!--ANIOMATIKONS-->
+		<a-entity animation="property: position"
+		  animation="property: position"
+		  animation="property: rotation"
+          animation__d2="property: position"
+          animation__color="property: material.color"></a-entity>
+
+
+	
+
+	
 </a-scene>
 
 
